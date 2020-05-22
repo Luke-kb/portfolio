@@ -135,10 +135,10 @@ nav a:hover {
 }
 
 .center {
-  display: block;
+  display: flexbox;
   text-align: center;
   padding: 5em 2em 2em 2em;
-
+  
 }
 
 .center img {
@@ -164,10 +164,19 @@ nav a:hover {
 }
 
 .center button {
-  margin-top: 2em;
+  margin-top: 1.5em;
   border-radius: 8px;
-  height: 3em;
+  height: 2em;
+  
+}
 
+.icons {
+  margin-top: 1.5em;
+}
+
+.icons i {
+  font-size: 2em;
+  color: black;
 }
 
 /* footer styles */
@@ -180,12 +189,11 @@ footer {
   left: 0;
   bottom: 0;
   background-color: var(--header-footer);
+  display: flexbox;
+  align-items: center;
 }
 
 .footer-text {
-}
-
-.icons {
 }
 
 /* RESPONSIVE  */
@@ -223,7 +231,10 @@ footer {
   
   .nav-toggle-label {display: none;}
   
-  header h2 {margin: auto 0;}
+  header h2 {
+    margin: auto 0;
+    font-size: 3em;
+  }
 
 }
 
