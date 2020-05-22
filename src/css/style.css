@@ -1,6 +1,13 @@
+
+/* rgba(0, 0, 0, 1)
+rgba(34, 96, 137, 1)
+rgba(69, 146, 175, 1)
+RGBA(138, 76, 34, 1)
+rgba(227, 196, 168, 1) */
+
 :root {
-  /* --background: rgba(235, 235, 255, 0.85)) */
-  --background: rgba(205, 204, 255, 0.85)
+  --header-footer: rgba(69, 146, 175, 0.85);
+  --background: rgba(239, 236, 236, 1);
 }
 
 * {
@@ -15,20 +22,21 @@ body {
 }
 
 header {
-  background: var(--background);
+  background: var(--header-footer);
   text-align: left;
   position: fixed;
   z-index: 1;
   width: 100%;
   height: 8%;
-  /* display: flex; */
-  /* align-content: center; */
+  display: flex;
+  align-items: center;
 }
 
-header h1 {
-  font-weight: 300;
+header h2 {
+  font-weight: 400;
   margin: 0;
-  padding-left: 10px;
+  padding-left: 15px;
+  text-transform: uppercase;
 }
 
 /* navbar styles */
@@ -75,7 +83,7 @@ nav {
   position: absolute;
   text-align: left;
   top: 100%;
-  background: var(--background);
+  background: var(--header-footer);
   width: 100%;
   transform: scale(1, 0);
   transform-origin: top;
@@ -90,7 +98,6 @@ nav ul {
 
 nav li {
   padding-bottom: 0.8em;
-  margin-left: 1em;
   padding-top: 0.8em;
   text-align: center;
 }
@@ -98,7 +105,7 @@ nav li {
 nav a {
   color: rgb(44, 44, 44);
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
   opacity: 0;
   transition: opacity 120ms ease-in-out;
@@ -117,13 +124,14 @@ nav a:hover {
   transition: opacity 250ms ease-in-out 250ms;
 }
 
-/* main content styles */
+/* profile content styles */
 
-.main {
+#profile {
   display: block;
   position: absolute;
   top: 8%;
-  background-color: rgb(240, 236, 250);
+  background-color: var(--background);
+  height: 100%;
 }
 
 .center {
@@ -156,22 +164,28 @@ nav a:hover {
 }
 
 .center button {
-  margin-top: 1.2em;
+  margin-top: 2em;
+  border-radius: 8px;
+  height: 3em;
+
 }
 
 /* footer styles */
 
 footer {
   position: fixed;
-  height: 30px;
+  height: 50px;
   width: 100%;
   text-align: center;
   left: 0;
   bottom: 0;
+  background-color: var(--header-footer);
 }
 
 .footer-text {
-  padding-left: 0.5em;
+}
+
+.icons {
 }
 
 /* RESPONSIVE  */
@@ -195,6 +209,22 @@ footer {
   .col-s-10 {width: 83.33%;}
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
+  
+  #profile p {
+    font-size: 1.5em; 
+    padding: 0 3em 0 3em;
+  }
+  #profile button {
+    height: 43m; 
+    width: 6em;
+  }
+  
+  .center {padding-top: 7em;}
+  
+  .nav-toggle-label {display: none;}
+  
+  header h2 {margin: auto 0;}
+
 }
 
 @media only screen and (min-width: 768px) {
