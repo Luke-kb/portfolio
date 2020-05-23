@@ -1,6 +1,6 @@
 :root {
   --header: rgba(83, 159, 187, 1);
-  --header-dropdown: rgba(83, 159, 187, 0.85);
+  --header-dropdown: rgba(83, 159, 187, 1);
   --background: rgba(239, 236, 236, 1);
   --main: rgb(196, 218, 216);
   --footer: rgb(238, 238, 238);
