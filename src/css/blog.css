@@ -129,14 +129,25 @@ body {
 /* main content styles */
 
 #blog {
-  top: 20px;
+  position: absolute;
+  top: 50px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #blog img {
-  height: 160px;
+  height: 140px;
   width: auto;
+}
+
+.blog-item {
+  margin: auto 1em;
+}
+
+.top i{
+  position: absolute;
 }
 
 /* Footer styles */
