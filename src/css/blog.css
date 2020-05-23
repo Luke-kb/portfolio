@@ -1,6 +1,6 @@
 :root {
   --header: rgba(83, 159, 187, 1);
-  --header-dropdown: rgba(83, 159, 187, 0.85);
+  --header-dropdown: rgba(83, 159, 187, 1);
   --background: rgba(239, 236, 236, 1);
   --main: rgb(196, 218, 216);
   --footer: rgb(238, 238, 238);
@@ -128,42 +128,15 @@ body {
 
 /* main content styles */
 
-#profile {
-  position: absolute;
-  margin-top: 2em;
-  top: 50px;
-  /* padding: 2em; */
-  text-align: center;
-  display: flex;
-  height: 540px;
-}
-
-#profile .row {
+#blog {
+  top: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
-#profile img {
-  width: 100px;
-  height: auto;
-  border-radius: 50%;
-}
-
-#profile h1 {margin-bottom: 0.3em;}
-#profile p {margin: 0.5em 1.3em;}
-
-.special-btn {
-  margin-top: 1em;
-  width: fit-content;
-  height: 2em;
-}
-
-.special-btn a {
-  font-weight: bolder;
-  text-decoration: none;
-  font-style: italic;
-  color: black;
+#blog img {
+  height: 160px;
+  width: auto;
 }
 
 /* Footer styles */
