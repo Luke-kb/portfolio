@@ -46,7 +46,7 @@ body {
   font-weight: 300;
   margin: 0;
   padding-left: 15px;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 .nav-toggle {
@@ -133,6 +133,7 @@ body {
   top: 50px;
   display: flex;
   flex-direction: column;
+  transition: all 4s ease-in-out;
 }
 
 #projects .row {
@@ -141,33 +142,51 @@ body {
   align-items: center;
 }
 #projects .heading {
-  margin: 0.8em auto;
+  margin: 1.8em auto;
   align-items: center;
 }
 
-#projects h2 {
-  margin: 1em 0 1em 0.8;
+#projects h3, p {
+  align-self: center;
 }
 
-#projects h2, p {
-  align-self: flex-start;
-  margin-left: 1em;
+#projects h3 {
+  margin-top: 25px;
 }
 
-#projects h2 a {
+#projects p {
+  margin: 15px 45px 30px 45px;
+}
+
+#projects h3 a {
   text-decoration: none;
   color: black;
   /* align-self: flex-start; */
 }
 
-#projects h2 a:hover {
+#projects h3 a:hover {
   text-decoration: underline;
 }
 
 #projects img {
-  height: 180px;
+  height: 150px;
   width: auto;
 }
+
+.project-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-section p {
+  font-weight: normal;
+}
+
+.top {
+  display: flex;
+  justify-content: flex-start;
+}
+
 
 /* Footer styles */
 
