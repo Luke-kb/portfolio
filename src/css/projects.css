@@ -1,6 +1,6 @@
 :root {
   --header: rgba(83, 159, 187, 1);
-  --header-dropdown: rgba(83, 159, 187, 0.85);
+  --header-dropdown: rgba(83, 159, 187, 1);
   --background: rgba(239, 236, 236, 1);
   --main: rgb(196, 218, 216);
   --footer: rgb(238, 238, 238);
@@ -128,7 +128,46 @@ body {
 
 /* main content styles */
 
+#projects {
+  position: absolute;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+}
 
+#projects .row {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#projects .heading {
+  margin: 0.8em auto;
+  align-items: center;
+}
+
+#projects h2 {
+  margin: 1em 0 1em 0.8;
+}
+
+#projects h2, p {
+  align-self: flex-start;
+  margin-left: 1em;
+}
+
+#projects h2 a {
+  text-decoration: none;
+  color: black;
+  /* align-self: flex-start; */
+}
+
+#projects h2 a:hover {
+  text-decoration: underline;
+}
+
+#projects img {
+  height: 180px;
+  width: auto;
+}
 
 /* Footer styles */
 
@@ -219,30 +258,6 @@ body {
     opacity: 1;
   }
   
-  #profile {
-    align-items: center;
-    justify-content: center;
-    height: 88%;
-  }
-
-  #profile img {
-    width: 140px;
-  }
-
-  #profile p {
-    margin: auto 7em;
-    padding-top: 1em;
-  }
-
-  #profile .row {
-    padding: 1em 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: var(--main);
-  }
-  
   #footer .row {
     flex-direction: row;
     align-items: center;
@@ -274,12 +289,4 @@ body {
     display: none;
   }
 
-  #profile p {
-      margin: auto 20em;
-      padding-top: 1em;
-    }
-
-  #profile img {
-    width: 160px;
-  }
 } 
