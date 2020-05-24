@@ -2,10 +2,16 @@
   --header: rgba(83, 159, 187, 1);
   --header-dropdown: rgba(83, 159, 187, 1);
   --background: rgba(239, 236, 236, 1);
-  --other: rgba(176, 97, 69, 1);
-  --main: rgba(196, 218, 216, 1);
-  --footer: rgba(238, 238, 238, 1);
+  --main: rgb(196, 218, 216);
+  --footer: rgb(238, 238, 238);
 }
+
+html {scroll-behavior: smooth;}
+
+* {
+  box-sizing: border-box;
+}
+
 
 body {
   margin: 0;
@@ -13,11 +19,6 @@ body {
   font-family: 'Fjalla One', sans-serif;
   font-weight: 300;
 }
-
-* {
-  box-sizing: border-box;
-}
-
 #header, .menu-heading, .header-menu-nav {
   display: flex;
   align-items: center;
@@ -29,7 +30,6 @@ body {
   z-index: 1;
   min-height: 50px;
 }
-
 
 .row {
   width: 100%;
@@ -101,6 +101,10 @@ body {
   align-items: center;
 }
 
+.header-menu-nav div a::nth-child(2) {
+  color: rgb(117, 110, 110);
+}
+
 .header-menu-nav div {
   height: 2em;
   margin-top: 0.7em;
@@ -116,7 +120,7 @@ body {
 }
 
 .header-menu-nav div a:hover {
-  color: var(--other);
+  color: rgb(117, 110, 110);
 }
 
 .nav-toggle:checked ~ nav {
@@ -130,109 +134,92 @@ body {
 
 /* main content styles */
 
-#contact {
-  display: flex;
-}
-
-.contact-info {
+#blog {
   position: absolute;
   top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 }
 
-#contact h3 {
-  margin-top: 20px;
-  margin-bottom: 15px;
+.blog-details h3 {margin: 5px auto;}
+
+.blog-item img {
+  height: 220px;
+  width: auto;
+  margin-top: 10px;
 }
 
-.heading h1 {
-  font-size: xx-large;
-  margin: 20px auto;
+.blog-item {margin: auto 20px;}
+
+.blog-content p {
+  font-family: 'Raleway', sans-serif;
+  margin: 10px 0;
+  font-size: large;
 }
 
-.social-icons {
-  margin: 1em auto;
+.blog-details span {margin-bottom: 20px;}
+.blog-details span i{
+  margin: 0 5px;
+  color: var(--header);
+}
+
+.double {   /* (hr)  */
+  border: none;
+  border-top: 2px double rgb(105, 105, 105);
+  color: rgb(105, 105, 105);
+  overflow: visible;
+  text-align: center;
+  height: 4px;
+  margin: 10px auto;
+}
+
+.social-share-icons i {
+  margin: 0 8px;
+  color: var(--header);
+}
+
+.blog-footer {
+  position: relative;
+}
+
+.top {
+  /* position: relative; */
   display: flex;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: space-evenly;
+  margin-bottom: 10px;
+  padding-right: 20px;
 }
 
-.social-icons a {
-  font-size: 2em;
-  color: black;
-}
+.top i {font-size: 30px; color: rgb(75, 75, 75);}
 
-.social-icons a:hover {
-  color: var(--other);
-}
-
-/* form styles */
-
-.wrapper {
-  position: absolute;
-  top: 330px;
-  padding: 0 2em;
-  margin-bottom: 50px;
-}
-
-#contact-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#contact-form:nth-child(4) {
-  align-content: flex-start;
-}
-
-#contact-form input {
-  height: 35px;
-  padding-left: 5px;
-  background-color: rgb(227, 242, 250);
-  border-radius: 8px;
-  border: 2px solid rgb(44, 44, 44);
-  margin: 5px 0;
-  width: 18em;
-}
-
-#message.form-control {
-  padding-left: 5px;
-  width: 18em;
-  background-color: rgb(227, 242, 250);
-  border-radius: 8px;
-  border: 2px solid rgb(44, 44, 44);
-}
-
-#contact-form input::placeholder, 
-#contact-form textarea::placeholder {
-  color: var(--other);
-}
-
-#contact-form .submit input {
-  background: var(--other);
-  width: 100px;
-  border-radius: 15px;
-  font-weight: bold;
-}
-
-.text-field label {margin-bottom: 10px;}
+.top:last-of-type {margin-bottom: 20px;}
 
 /* Footer styles */
 
 #footer {
   position: fixed;
+  margin-top: auto;
+  width: 100%;
   height: auto;
   left: 0;
   bottom: 0;
   background-color: var(--footer);
   display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+
+#footer .row {
+  display: flex;
   justify-content: space-between;
 }
+
+#footer .row:nth-child(1) {justify-content: flex-start;}
+#footer .row:nth-child(3) {justify-content: flex-end;}
 
 .footer-text {
   display: flex;
@@ -260,10 +247,6 @@ body {
   margin: auto 5px;
 }
 
-.footer-social-nav a i:hover, .footer-menu-nav a:hover {
-  color: black;
-}
-
 /* RESPONSIVE STYLING */
 
 /* For mobile phones: */
@@ -285,11 +268,11 @@ body {
   .col-s-10 {width: 83.33%;}
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
-
+  
   header input, header label, header span {
     display: none;
   }
-
+  
   #header .row {
     justify-content: flex-end;
     align-items: center;
@@ -313,45 +296,50 @@ body {
     opacity: 1;
   }
   
-  /* main content   */
+  /* main content styles */
 
-  #contact {
+  #blog {
+    margin-bottom: 50px;
+  }
+
+  .blog-item {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
   }
 
-  .heading h1 {
-    margin-top: 2em;
-    font-size: 3em;
-  }
-
-  .contact-info h4 {margin-top: 75px;}
-
-  .social-icons {justify-content: space-evenly;}
-  .social-icons a {margin: 0 10px;}
-  
-    .wrapper {
-      top: 450px;
-      display: flex;
-      align-items: center;
-      justify-content: center;  
-    }
-
-  /* contact form styles */
-
-  .contact-form {
-    top: 700px;
-  }
-
-  #contact-form input, #message.form-control {
-    width: 30em;
+  .blog-item img {
+    height: 420px;
+    width: auto;
+    margin: 15px 0;
   }
   
+  .blog-item:last-child {
+    align-items: center;
+  }
+  
+  .blog-details {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+  
+  .blog-details span {margin: 0;}
+ 
+  .blog-details h3 {
+    margin: 10px 0;
+    font-size: xx-large;
+  }
+
+  .blog-footer {margin: 0 auto;}
 
   /* footer styles */
-  
+
   #footer .row {
     flex-direction: row;
     align-items: center;
@@ -361,7 +349,7 @@ body {
   .footer-menu-nav {display: flex;}
   .footer-text {font-size: larger;}
   .footer-social-nav a {font-size: 2em;}
-
+  
 }
 
 /* For desktop: */
@@ -382,9 +370,11 @@ body {
   .nav-toggle-label {
     display: none;
   }
+  
+  .heading h1 {font-size: 60px;}
 
-  .wrapper {
-    margin-bottom: 5em;
-  }
+  .top i:hover {color: grey;}
 
+  .footer-menu-nav a:hover {color: black;}
+  .footer-social-nav i:hover {color: black;}
 } 
