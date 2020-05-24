@@ -6,11 +6,20 @@
   --footer: rgb(238, 238, 238);
 }
 
+html {scroll-behavior: smooth;}
+
 * {
   box-sizing: border-box;
 }
 
-#header, .heading, .header-menu-nav {
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 300;
+}
+#header, .menu-heading, .header-menu-nav {
   display: flex;
   align-items: center;
 }
@@ -22,13 +31,6 @@
   min-height: 50px;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Fjalla One', sans-serif;
-  font-weight: 300;
-}
-
 .row {
   width: 100%;
   display: flex;
@@ -38,11 +40,11 @@ body {
 
 /* hamburger nav styles */
 
-.heading {
+.menu-heading {
   justify-content: flex-start;
 }
 
-.heading h1 {
+.menu-heading h1 {
   font-weight: 300;
   margin: 0;
   padding-left: 15px;
@@ -99,6 +101,10 @@ body {
   align-items: center;
 }
 
+.header-menu-nav div a::nth-child(2) {
+  color: rgb(117, 110, 110);
+}
+
 .header-menu-nav div {
   height: 2em;
   margin-top: 0.7em;
@@ -135,34 +141,85 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 }
 
-#blog img {
-  height: 140px;
+.blog-details h3 {margin: 5px auto;}
+
+.blog-item img {
+  height: 220px;
   width: auto;
+  margin-top: 10px;
 }
 
-.blog-item {
-  margin: auto 1em;
+.blog-item {margin: auto 20px;}
+
+.blog-content p {
+  font-family: 'Raleway', sans-serif;
+  margin: 10px 0;
+  font-size: large;
 }
 
-.top i{
-  position: absolute;
+.blog-details span {margin-bottom: 20px;}
+.blog-details span i{
+  margin: 0 5px;
+  color: var(--header);
 }
+
+.double {   /* (hr)  */
+  border: none;
+  border-top: 2px double rgb(105, 105, 105);
+  color: rgb(105, 105, 105);
+  overflow: visible;
+  text-align: center;
+  height: 4px;
+  margin: 10px auto;
+}
+
+.social-share-icons i {
+  margin: 0 8px;
+  color: var(--header);
+}
+
+.blog-footer {
+  position: relative;
+}
+
+.top {
+  /* position: relative; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-right: 20px;
+}
+
+.top i {font-size: 30px; color: rgb(75, 75, 75);}
+
+.top:last-of-type {margin-bottom: 20px;}
 
 /* Footer styles */
 
 #footer {
   position: fixed;
+  margin-top: auto;
   width: 100%;
   height: auto;
   left: 0;
   bottom: 0;
   background-color: var(--footer);
   display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+
+#footer .row {
+  display: flex;
   justify-content: space-between;
 }
+
+#footer .row:nth-child(1) {justify-content: flex-start;}
+#footer .row:nth-child(3) {justify-content: flex-end;}
 
 .footer-text {
   display: flex;
@@ -211,11 +268,11 @@ body {
   .col-s-10 {width: 83.33%;}
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
-
+  
   header input, header label, header span {
     display: none;
   }
-
+  
   #header .row {
     justify-content: flex-end;
     align-items: center;
@@ -238,6 +295,50 @@ body {
   .header-menu-nav a {
     opacity: 1;
   }
+  
+  /* main content styles */
+
+  #blog {
+    margin-bottom: 50px;
+  }
+
+  .blog-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .blog-item img {
+    height: 420px;
+    width: auto;
+    margin: 15px 0;
+  }
+  
+  .blog-item:last-child {
+    align-items: center;
+  }
+  
+  .blog-details {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+  
+  .blog-details span {margin: 0;}
+ 
+  .blog-details h3 {
+    margin: 10px 0;
+    font-size: xx-large;
+  }
+
+  .blog-footer {margin: 0 auto;}
+
+  /* footer styles */
 
   #footer .row {
     flex-direction: row;
@@ -248,7 +349,7 @@ body {
   .footer-menu-nav {display: flex;}
   .footer-text {font-size: larger;}
   .footer-social-nav a {font-size: 2em;}
-
+  
 }
 
 /* For desktop: */
@@ -269,5 +370,11 @@ body {
   .nav-toggle-label {
     display: none;
   }
+  
+  .heading h1 {font-size: 60px;}
 
+  .top i:hover {color: grey;}
+
+  .footer-menu-nav a:hover {color: black;}
+  .footer-social-nav i:hover {color: black;}
 } 
