@@ -352,7 +352,6 @@ body {
   button.special-btn:hover {
       animation : pulse 1s infinite;
   }
-  }
 
   #profile p {
       padding-top: 1em;
@@ -362,5 +361,5 @@ body {
 
   #profile img {
     width: 160px;
-  }
+  } 
 } 
