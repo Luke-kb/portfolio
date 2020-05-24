@@ -2,6 +2,7 @@
   --header: rgba(83, 159, 187, 1);
   --header-dropdown: rgba(83, 159, 187, 1);
   --background: rgba(239, 236, 236, 1);
+  --other: rgba(176, 97, 69, 1);
   --main: rgb(196, 218, 216);
   --footer: rgb(238, 238, 238);
 }
@@ -10,7 +11,22 @@
   box-sizing: border-box;
 }
 
-#header, .heading, .header-menu-nav {
+@keyframes pulse {
+  from {
+      transform : scale(1);
+      opacity   : 1;
+  }
+  50% {
+      transform : scale(0.75);
+      opacity   : 0.25;
+  }
+  to {
+      transform : scale(1);
+      opacity   : 1;
+  }
+}
+
+#header, .menu-heading, .header-menu-nav {
   display: flex;
   align-items: center;
 }
@@ -38,14 +54,20 @@ body {
 
 /* hamburger nav styles */
 
-.heading {
+.menu-heading {
   justify-content: flex-start;
 }
 
-.heading h1 {
+.menu-heading h1 {
   font-weight: 300;
   margin: 0;
   padding-left: 15px;
+  font-size: 1.2em;
+}
+
+.menu-heading a {
+  color: rgb(44, 44, 44);
+  text-decoration: none;
   font-size: 1.2em;
 }
 
@@ -114,7 +136,7 @@ body {
 }
 
 .header-menu-nav div a:hover {
-  color: rgb(117, 110, 110);
+  color: var(--footer);
 }
 
 .nav-toggle:checked ~ nav {
@@ -130,12 +152,11 @@ body {
 
 #profile {
   position: absolute;
-  margin-top: 2em;
   top: 50px;
-  /* padding: 2em; */
   text-align: center;
   display: flex;
-  height: 540px;
+  height: 92%;
+  background-color: var(--main);
 }
 
 #profile .row {
@@ -157,6 +178,9 @@ body {
   margin-top: 1em;
   width: fit-content;
   height: 2em;
+  background-color: var(--other);
+  border: none;
+  border-radius: 10px;
 }
 
 .special-btn a {
@@ -171,7 +195,7 @@ body {
 #footer {
   position: fixed;
   width: 100%;
-  height: auto;
+  height: 40px;
   left: 0;
   bottom: 0;
   background-color: var(--footer);
@@ -204,6 +228,10 @@ body {
 .footer-social-nav a {
   color: rgb(133, 133, 133);
   margin: auto 5px;
+}
+
+.footer-social-nav a i:hover, .footer-menu-nav a:hover {
+  color: black;
 }
 
 /* RESPONSIVE STYLING */
@@ -256,17 +284,18 @@ body {
   }
   
   #profile {
+    display: flex;
     align-items: center;
     justify-content: center;
-    height: 88%;
+    height: 100%;
   }
 
   #profile img {
-    width: 140px;
+    width: 150px;
   }
 
   #profile p {
-    margin: auto 7em;
+    /* margin: auto 0; */
     padding-top: 1em;
   }
 
@@ -277,8 +306,14 @@ body {
     align-items: center;
     justify-content: center;
     background: var(--main);
+    border: 10px solid var(--footer);
+    border-radius: 20px;
   }
   
+  #footer {
+    height: 60px;
+  }
+
   #footer .row {
     flex-direction: row;
     align-items: center;
@@ -310,10 +345,20 @@ body {
     display: none;
   }
 
+  #profile {
+    height: 90%;
+  }
+
+  button.special-btn:hover {
+      animation : pulse 1s infinite;
+  }
+  }
+
   #profile p {
-      margin: auto 20em;
       padding-top: 1em;
     }
+
+  #footer {height: 45px;}
 
   #profile img {
     width: 160px;
