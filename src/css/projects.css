@@ -212,7 +212,7 @@ hr .double {
 }
 
 .top i {font-size: 30px; color: black;}
-.top a:hover {color: grey;}
+.top a i:hover {color: var(--heading);}
 
 /* Footer styles */
 
@@ -330,6 +330,8 @@ hr .double {
 
   .project-section h3 {font-size: xx-large;}
   .project-section p {font-size: x-large; font-weight: lighter;}
+
+  .top i {font-size: 3em;}
 
 /* footer styles */
 
