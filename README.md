@@ -4,8 +4,6 @@
 
 - [Link to Repo](https://github.com/Luke-kb/portfolio)
 
-[TOC]
-
 ### Purpose
 
 The purpose for this project was to practice deploying a responsive, static website and demonstrate HTML layout and CSS and styling skills wthin a portfolio format and theme. Currently a proof-of-concept to be further developed in future.
