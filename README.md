@@ -1,4 +1,4 @@
-# T1A3 Portfolio Project
+# T1A3 Portfolio Website
 
 - [Link to website](https://luke-kb.netlify.app/)
 
@@ -8,11 +8,11 @@
 
 ### Purpose
 
-
+The purpose for this project was to practice deploying a responsive, static website and demonstrate HTML layout and CSS and styling skills.
 
 ### Functionality / Features
 
-
+The website is responsive for mobile, tablet and desktop screens and utilises some simple CSS animations. There are 4 main html pages: homepage/index, projects, blog and a contact page. There is a contact form (not currently functioning), a link to download a resume in .pdf format (mockup) and social icon links to share blog posts (not currently functioning).
 
 ### Sitemap
 
@@ -20,17 +20,25 @@
 
 ### Screenshots
 
+![mobile-index-hamburger](ppt/screenshots/mobile-index-hamburger.png)
+
+![mobile-contact-form](ppt/screenshots/mobile-contact-form.png)
+
+![tablet-top-icon](ppt/screenshots/tablet-top-icon.png)
+
+![tab-index](ppt/screenshots/tab-index.png)
+
 
 
 ### Target Audience
 
-Potential employers, peers, mentors.
+Potential employers, peers and mentors.
 
 ### Tech stack
 
-- HTML & CSS
-
+- HTML & CSS3
 - Deployed on Netlify
+- Code hosted on GitHub
 
 ### Links
 
