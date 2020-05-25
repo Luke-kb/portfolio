@@ -8,7 +8,7 @@
 
 ### Purpose
 
-The purpose for this project was to practice deploying a responsive, static website and demonstrate HTML layout and CSS and styling skills.
+The purpose for this project was to practice deploying a responsive, static website and demonstrate HTML layout and CSS and styling skills wthin a portfolio format and theme. Currently a proof-of-concept to be further developed in future.
 
 ### Functionality / Features
 
@@ -20,13 +20,13 @@ The website is responsive for mobile, tablet and desktop screens and utilises so
 
 ### Screenshots
 
-![mobile-index-hamburger](ppt/screenshots/mobile-index-hamburger.png)
+![mobile-index-hamburger](docs/screenshots/mobile-index-hamburger.png)
 
-![mobile-contact-form](ppt/screenshots/mobile-contact-form.png)
+![mobile-contact-form](docs/screenshots/mobile-contact-form.png)
 
-![tablet-top-icon](ppt/screenshots/tablet-top-icon.png)
+![tablet-top-icon](docs/screenshots/tablet-top-icon.png)
 
-![tab-index](ppt/screenshots/tab-index.png)
+![tab-index](docs/screenshots/tab-index.png)
 
 
 
