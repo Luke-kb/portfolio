@@ -279,6 +279,8 @@ hr .double {
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
 
+  /* header styles */
+
   header input, header label, header span {
     display: none;
   }
@@ -362,11 +364,15 @@ hr .double {
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
   
+  /* header styles  */
+
   .nav-toggle-label {
     display: none;
   }
 
   .menu-heading h1 {display: none;}
+
+  /* main content  */
 
   #projects .heading {
     height: 150px;

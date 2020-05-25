@@ -201,7 +201,6 @@ body {
 }
 
 .top {
-  /* position: relative; */
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -284,6 +283,8 @@ body {
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
   
+  /* header styles */
+
   header input, header label, header span {
     display: none;
   }
@@ -387,16 +388,21 @@ body {
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
+
+  /* header */
   
   .nav-toggle-label {
     display: none;
   }
   .menu-heading h1 {display: none;}
 
+  /* main content */
   .heading h1 {font-size: xxx-large;}
 
   .top i:hover {color: var(--heading);}
   .top i {font-size: 3em;}
+
+  /* footer  */
 
   .footer-menu-nav a:hover {color: black;}
   .footer-social-nav i:hover {color: black;}

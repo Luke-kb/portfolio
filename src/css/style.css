@@ -266,6 +266,8 @@ body {
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
 
+  /* header styles */
+  
   header input, header label, header span {
     display: none;
   }
@@ -295,6 +297,8 @@ body {
   }
 
   .menu-heading h1 {display: none;}
+
+  /* main content styles */
 
   #profile {
     display: flex;
@@ -327,7 +331,8 @@ body {
     background-color: var(--footer);
   }
 
-  
+  /* footer styles */
+
   #footer {
     height: 60px;
   }
@@ -366,7 +371,10 @@ body {
   #profile {
     height: 90%;
   }
-
+  
+  #profile img {
+    width: 160px;
+  } 
   button.special-btn:hover {
       animation : pulse 1s infinite;
   }
@@ -374,10 +382,7 @@ body {
   .special-btn {
     background-color: var(--footer);
   }
-  
+
   #footer {height: 45px;}
 
-  #profile img {
-    width: 160px;
-  } 
 } 
