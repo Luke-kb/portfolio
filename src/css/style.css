@@ -1,10 +1,13 @@
 :root {
-  --header: rgba(83, 159, 187, 1);
-  --header-dropdown: rgba(83, 159, 187, 1);
+  /* --header: rgba(83, 159, 187, 1); */
+  --header: RGBA(99, 130, 143, 1);
+  /* --header-dropdown: rgba(83, 159, 187, 1); */
+  --header-dropdown: RGBA(99, 130, 143, 1);
   --background: rgba(239, 236, 236, 1);
   --other: rgb(117, 110, 110, 1);
   --heading: rgba(176, 97, 69, 1);
   --main: rgb(196, 218, 216);
+  --main2: rgb(180, 206, 224);
   --footer: rgb(238, 238, 238);
 }
 
@@ -60,6 +63,7 @@ body {
 }
 
 .menu-heading h1 {
+  display: none;
   font-weight: 300;
   margin: 0;
   padding-left: 15px;
@@ -130,7 +134,7 @@ body {
 .header-menu-nav a {
   color: rgb(44, 44, 44);
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   text-transform: uppercase;
   opacity: 0;
   transition: opacity 120ms ease-in-out;
@@ -179,7 +183,7 @@ body {
   margin-top: 1em;
   width: fit-content;
   height: 2em;
-  background-color: var(--heading);
+  background-color: var(--footer);
   border: none;
   border-radius: 10px;
 }
@@ -284,7 +288,9 @@ body {
   .header-menu-nav a {
     opacity: 1;
   }
-  
+
+  .menu-heading h1 {display: none;}
+
   #profile {
     display: flex;
     align-items: center;
@@ -307,8 +313,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: var(--main);
-    border: 10px solid var(--footer);
+    background: var(--heading);
+    border: 10px solid var(--main);
     border-radius: 20px;
   }
   
