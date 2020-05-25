@@ -267,7 +267,7 @@ body {
   .col-s-12 {width: 100%;}
 
   /* header styles */
-  
+
   header input, header label, header span {
     display: none;
   }
@@ -309,11 +309,6 @@ body {
 
   #profile img {
     width: 150px;
-  }
-
-  #profile p {
-    margin: 1em 1em;
-    padding: 1em;
   }
 
   #profile .row {
