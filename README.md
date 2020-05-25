@@ -1,8 +1,8 @@
-# Portfolio
+# T1A3 Portfolio Project
 
-Link to website: [](https://luke-kb.netlify.app/)
+- [Link to website](https://luke-kb.netlify.app/)
 
-Link to repo: [](https://github.com/Luke-kb/portfolio)
+- [Link to Repo](https://github.com/Luke-kb/portfolio)
 
 [TOC]
 
@@ -16,7 +16,7 @@ Link to repo: [](https://github.com/Luke-kb/portfolio)
 
 ### Sitemap
 
-
+![sitemap flowchart](docs/sitemap-flowchart.png)
 
 ### Screenshots
 
@@ -31,3 +31,9 @@ Potential employers, peers, mentors.
 - HTML & CSS
 
 - Deployed on Netlify
+
+### Links
+
+- [Link to website](https://luke-kb.netlify.app/)
+
+- [Link to Repo](https://github.com/Luke-kb/portfolio)

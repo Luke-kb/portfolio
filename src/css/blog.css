@@ -125,7 +125,7 @@ body {
 }
 
 .header-menu-nav div a:hover {
-  color: var(--other);
+  color: var(--footer);
 }
 
 .nav-toggle:checked ~ nav {
