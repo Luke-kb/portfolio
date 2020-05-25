@@ -2,6 +2,7 @@
   --header: rgba(83, 159, 187, 1);
   --header-dropdown: rgba(83, 159, 187, 1);
   --background: rgba(239, 236, 236, 1);
+  --other: rgb(117, 110, 110, 1);
   --heading: rgb(176, 97, 69, 1);
   --main: rgb(196, 218, 216);
   --footer: rgb(238, 238, 238);
@@ -115,7 +116,7 @@ body {
 }
 
 .header-menu-nav div a:hover {
-  color: rgb(117, 110, 110);
+  color: var(--other);
 }
 
 .nav-toggle:checked ~ nav {
@@ -136,10 +137,6 @@ body {
   flex-direction: column;
   transition: all 4s ease-in-out;
 }
-/* 
-.project-section {
-  background: var(--main);
-} */
 
 #projects .row {
   flex-direction: column;
@@ -150,6 +147,7 @@ body {
 #projects .heading {
   margin: 0;
   height: 100px;
+
   display: flex;
   text-align: center;
   align-items: center;
@@ -167,7 +165,7 @@ body {
 #projects p {
   margin: 15px 45px 30px 45px; 
   text-align: center;
-}
+  font-family: 'Raleway', sans-serif;}
 
 #projects h3 a {
   text-decoration: none;
@@ -205,9 +203,9 @@ hr .double {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-end;
   margin-bottom: 50px;
-  margin-left: 45px;
+  margin-right: 50px;
 }
 
 .top i {font-size: 30px; color: black;}
@@ -283,10 +281,10 @@ hr .double {
   }
 
   #header .row {
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
   }
-  
+
   #header {
     display: flex;
     justify-content: space-between;
@@ -305,6 +303,8 @@ hr .double {
     opacity: 1;
   }
   
+  /* main content styles */
+
   #projects {
     justify-content: center;
   }
@@ -323,8 +323,12 @@ hr .double {
     margin-bottom: 70px;
   }
 
+  .menu-heading h1 {display: none;}
+
   .project-section h3 {font-size: xx-large;}
   .project-section p {font-size: x-large; font-weight: lighter;}
+
+/* footer styles */
 
   #footer .row {
     flex-direction: row;
@@ -357,6 +361,8 @@ hr .double {
     display: none;
   }
 
+  .menu-heading h1 {display: none;}
+
   #projects .heading {
     height: 150px;
     font-size: xxx-large;
@@ -376,9 +382,6 @@ hr .double {
   
   .project-section hr {display: none;}
 
-  .top {
-    justify-content: flex-start;
-    padding-left: 40px;
-  }
+  .top {padding-left: 40px;}
 
 } 

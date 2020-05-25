@@ -2,7 +2,8 @@
   --header: rgba(83, 159, 187, 1);
   --header-dropdown: rgba(83, 159, 187, 1);
   --background: rgba(239, 236, 236, 1);
-  --other: rgba(176, 97, 69, 1);
+  --other: rgb(117, 110, 110, 1);
+  --heading: rgba(176, 97, 69, 1);
   --main: rgb(196, 218, 216);
   --footer: rgb(238, 238, 238);
 }
@@ -62,7 +63,7 @@ body {
   font-weight: 300;
   margin: 0;
   padding-left: 15px;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 .menu-heading a {
@@ -136,7 +137,7 @@ body {
 }
 
 .header-menu-nav div a:hover {
-  color: var(--footer);
+  color: var(--other);
 }
 
 .nav-toggle:checked ~ nav {
@@ -178,7 +179,7 @@ body {
   margin-top: 1em;
   width: fit-content;
   height: 2em;
-  background-color: var(--other);
+  background-color: var(--heading);
   border: none;
   border-radius: 10px;
 }
@@ -261,13 +262,14 @@ body {
   }
 
   #header .row {
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
   }
   
   #header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
   }  
   
   .header-menu-nav {
@@ -296,7 +298,7 @@ body {
 
   #profile p {
     /* margin: auto 0; */
-    padding-top: 1em;
+    padding: 1em;
   }
 
   #profile .row {
@@ -353,9 +355,6 @@ body {
       animation : pulse 1s infinite;
   }
 
-  #profile p {
-      padding-top: 1em;
-    }
 
   #footer {height: 45px;}
 

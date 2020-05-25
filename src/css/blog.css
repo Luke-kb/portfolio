@@ -2,6 +2,8 @@
   --header: rgba(83, 159, 187, 1);
   --header-dropdown: rgba(83, 159, 187, 1);
   --background: rgba(239, 236, 236, 1);
+  --other: rgb(117, 110, 110, 1);
+  --heading: rgba(176, 97, 69, 1);
   --main: rgb(196, 218, 216);
   --footer: rgb(238, 238, 238);
 }
@@ -48,7 +50,7 @@ body {
   font-weight: 300;
   margin: 0;
   padding-left: 15px;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 .nav-toggle {
@@ -120,7 +122,7 @@ body {
 }
 
 .header-menu-nav div a:hover {
-  color: rgb(117, 110, 110);
+  color: var(--other);
 }
 
 .nav-toggle:checked ~ nav {
@@ -133,6 +135,16 @@ body {
 }
 
 /* main content styles */
+
+.heading {
+  height: 100px;
+  margin: 0;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--heading);
+}
 
 #blog {
   position: absolute;
@@ -274,7 +286,7 @@ body {
   }
   
   #header .row {
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
   }
   
@@ -296,10 +308,16 @@ body {
     opacity: 1;
   }
   
+  .menu-heading h1 {display: none;}
+
   /* main content styles */
 
   #blog {
     margin-bottom: 50px;
+  }
+
+  #blog .heading {
+    height: 150px;
   }
 
   .blog-item {
@@ -311,7 +329,7 @@ body {
   }
 
   .blog-item img {
-    height: 420px;
+    height: 330px;
     width: auto;
     margin: 15px 0;
   }
@@ -370,10 +388,12 @@ body {
   .nav-toggle-label {
     display: none;
   }
-  
-  .heading h1 {font-size: 60px;}
+  .menu-heading h1 {display: none;}
 
-  .top i:hover {color: grey;}
+  .heading h1 {font-size: xxx-large;}
+
+  .top i:hover {color: var(--heading);}
+  .top i {font-size: 3em;}
 
   .footer-menu-nav a:hover {color: black;}
   .footer-social-nav i:hover {color: black;}

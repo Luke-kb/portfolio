@@ -2,7 +2,8 @@
   --header: rgba(83, 159, 187, 1);
   --header-dropdown: rgba(83, 159, 187, 1);
   --background: rgba(239, 236, 236, 1);
-  --other: rgba(176, 97, 69, 1);
+  --other: rgb(117, 110, 110, 1);
+  --heading: rgba(176, 97, 69, 1);
   --main: rgba(196, 218, 216, 1);
   --footer: rgba(238, 238, 238, 1);
 }
@@ -48,7 +49,7 @@ body {
   font-weight: 300;
   margin: 0;
   padding-left: 15px;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 .nav-toggle {
@@ -153,6 +154,16 @@ body {
   margin: 20px auto;
 }
 
+#contact .heading {
+  height: 100px;
+  margin: 0;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--heading);
+}
+
 .social-icons {
   margin: 1em auto;
   display: flex;
@@ -166,14 +177,14 @@ body {
 }
 
 .social-icons a:hover {
-  color: var(--other);
+  color: var(--heading);
 }
 
 /* form styles */
 
 .wrapper {
   position: absolute;
-  top: 330px;
+  top: 390px;
   padding: 0 2em;
   margin-bottom: 50px;
 }
@@ -192,7 +203,7 @@ body {
 #contact-form input {
   height: 35px;
   padding-left: 5px;
-  background-color: rgb(227, 242, 250);
+  background-color: var(--main);
   border-radius: 8px;
   border: 2px solid rgb(44, 44, 44);
   margin: 5px 0;
@@ -202,9 +213,10 @@ body {
 #message.form-control {
   padding-left: 5px;
   width: 18em;
-  background-color: rgb(227, 242, 250);
+  background-color: var(--main);
   border-radius: 8px;
   border: 2px solid rgb(44, 44, 44);
+  margin-top: 5px;
 }
 
 #contact-form input::placeholder, 
@@ -213,7 +225,7 @@ body {
 }
 
 #contact-form .submit input {
-  background: var(--other);
+  background: var(--heading);
   width: 100px;
   border-radius: 15px;
   font-weight: bold;
@@ -291,7 +303,7 @@ body {
   }
 
   #header .row {
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
   }
   
@@ -313,6 +325,12 @@ body {
     opacity: 1;
   }
   
+  .menu-heading h1 {display: none;}
+
+  .header-menu-nav:nth-child(4) {
+    color: var(--other);
+  }
+
   /* main content   */
 
   #contact {
@@ -322,9 +340,12 @@ body {
     justify-content: center;
   }
 
+  #contact .heading {
+    height: 150px;
+  }
+
   .heading h1 {
-    margin-top: 1.5em;
-    font-size: 3em;
+    font-size: xxx-large;
   }
 
   .contact-info h4 {margin-top: 75px;}
@@ -333,7 +354,7 @@ body {
   .social-icons a {margin: 0 10px;}
   
     .wrapper {
-      top: 450px;
+      top: 500px;
       display: flex;
       align-items: center;
       justify-content: center;  
@@ -383,8 +404,7 @@ body {
     display: none;
   }
 
-  .wrapper {
-    margin-bottom: 5em;
-  }
+  .wrapper {margin-bottom: 5em;}
+  .menu-heading h1 {display: none;}
 
 } 
