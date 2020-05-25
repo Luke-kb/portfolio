@@ -178,8 +178,8 @@ body {
 
 #profile h1 {margin-bottom: 0.3em;}
 #profile p, #profile em {
-  margin-top: 1em;
-  padding: 0 1em;
+  margin: 0.5em 0;
+  padding: 0 1.5em;
   text-align: center;
 }
 
@@ -308,7 +308,7 @@ body {
   }
 
   #profile img {
-    width: 150px;
+    width: 130px;
   }
 
   #profile .row {
@@ -321,6 +321,11 @@ body {
     border: 10px solid var(--main);
     border-radius: 20px;
   }
+
+  #profile p, #profile em {
+    padding: 0;
+  }
+
 
   .special-btn {
     background-color: var(--footer);
@@ -368,7 +373,7 @@ body {
   }
   
   #profile img {
-    width: 160px;
+    width: 130px;
   } 
   button.special-btn:hover {
       animation : pulse 1s infinite;
